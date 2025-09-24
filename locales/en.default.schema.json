@@ -3084,6 +3084,10 @@
             "image": {
               "label": "Image"
             },
+            "mobile_image": {
+              "label": "Mobile Image",
+              "info": "Shown only on mobile devices. If none is set, desktop image will be used."
+            },
             "heading": {
               "label": "Heading",
               "default": "Image slide"
