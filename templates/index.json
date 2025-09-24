@@ -152,6 +152,7 @@
         "media_type": "video",
         "image": "shopify://shop_images/necklace-being-worn-on-model.png",
         "video": "shopify://files/videos/jewel.mp4",
+        "video_preview_image": "shopify://shop_images/jewel.webp",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
