@@ -66,8 +66,17 @@
                 {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
             {%- elsif media_type == "video" -%}
+              {%- liquid
+                assign poster_image = section.settings.video_preview_image | default: section.settings.video.preview_image
+                if poster_image != blank
+                  assign poster_url = poster_image | image_url: width: 720
+                else
+                  assign poster_url = nil
+                endif
+              -%}
               {{ section.settings.video | video_tag:
-                image_size: '1100x',
+                image_size: '720x',
+                poster: poster_url,
                 autoplay: true,
                 loop: section.settings.enable_video_looping,
                 controls: section.settings.show_video_controls,
@@ -153,6 +162,12 @@
         "id": "video",
         "label": "t:sections.video.settings.video.label",
         "info": "t:sections.image-with-text.settings.video.info"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_preview_image",
+        "label": "t:sections.video.settings.video_preview_image.label",
+        "info": "t:sections.video.settings.video_preview_image.info"
       },
       {
         "type": "select",

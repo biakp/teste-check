@@ -3013,7 +3013,11 @@
         },
         "full_width": {
           "label": "Full width"
-        }
+        },
+        "video_preview_image": {
+          "label": "Video cover image",
+          "info": "Shown before the video plays (Recommended WebP format)"
+        },
       },
       "presets": {
         "name": "Video"
