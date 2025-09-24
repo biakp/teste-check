@@ -380,7 +380,7 @@
           "options__4": {
             "label": "Zoom in on scroll"
           },
-          "label": "Animation"
+          "label": "Image Animation"
         }
       },
       "padding": {
@@ -1320,6 +1320,21 @@
     "image-with-text": {
       "name": "Image with text",
       "settings": {
+      "media_type": {
+          "label": "Media type",
+          "options__1": {
+            "label": "Image"
+          },
+          "options__2": {
+            "label": "Video"
+          }
+        },
+        "video": {
+          "info": "Select a video from your media library"
+        },
+        "show_video_controls": {
+          "label": "Show video controls"
+        },
       "header": {
       "content": "Content"
       },
